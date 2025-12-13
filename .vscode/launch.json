@@ -2,11 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-JwtsecurityApplication<jwtsecurity>",
+            "name": "Spring Boot-JwtsecuritydemoApplication<jwtsecuritydemo>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.springsecurity.jwtsecurity.JwtsecurityApplication",
-            "projectName": "jwtsecurity",
+            "mainClass": "com.jwt.jwtsecuritydemo.JwtsecuritydemoApplication",
+            "projectName": "jwtsecuritydemo",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
