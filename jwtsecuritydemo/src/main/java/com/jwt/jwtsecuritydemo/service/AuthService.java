@@ -35,21 +35,16 @@ public class AuthService {
         User user = (User) authentication.getPrincipal();
 
         String token = authUtil.generateToken(user);
-        
-
         return new LoginResponseDTO(token, user.getId());
         
     }
 
     public SignUpResponseDTO signup(LoginRequestDTO signupRequestDTO) {
-
-        User user = userRepository.findByUsername(signupRequestDTO.getUsername()).orElseThrow();
-
-        if(user != null) {
+        if(userRepository.findByUsername(signupRequestDTO.getUsername()).isPresent()) {
             throw new IllegalArgumentException("User already exists");
         }   
 
-        user = userRepository.save(User.builder()
+        User user = userRepository.save(User.builder()
             .username(signupRequestDTO.getUsername())
             .password( passwordEncoder.encode(signupRequestDTO.getPassword()))
             .build()

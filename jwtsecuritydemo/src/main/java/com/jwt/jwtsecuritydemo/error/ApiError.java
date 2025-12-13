@@ -1,6 +1,5 @@
 package com.jwt.jwtsecuritydemo.error;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.springframework.http.HttpStatus;

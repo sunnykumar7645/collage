@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/v1")
 public class UserController {
 
 
-    @GetMapping
+    @GetMapping("/user")
     public String welcome() {
         return "Welcome to JWT Security Demo";
     }
