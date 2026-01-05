@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DemoApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.DemoApplication"
+        },
+        {
+            "type": "java",
+            "name": "CompanyApplication",
+            "request": "launch",
+            "mainClass": "com.jwt.company.CompanyApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-JwtsecuritydemoApplication<jwtsecuritydemo>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

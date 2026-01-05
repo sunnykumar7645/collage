@@ -1,6 +1,6 @@
 package com.jwt.jwtsecuritydemo.model.type;
 
-public enum Role {
+public enum RoleType {
     USER,
     ADMIN,
     OPS,

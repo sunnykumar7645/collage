@@ -1,5 +1,13 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+POST http://localhost:8082/auth/signup
+Content-Type: application/json
 
-###
+{
+    "username" : "skumar9@gmail.com",
+    "password" : "12345",
+    "name" : "sunny",
+    "roles" : [
+        "USER",
+        "ADMIN",
+        "SUPERADMIN"
+    ]
+}

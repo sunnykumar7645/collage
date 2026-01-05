@@ -1,5 +1,4 @@
 ### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
-
+GET http://localhost:8082/api/v1/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJza3VtYXI5QGdtYWlsLmNvbSIsInVzZXJJZCI6MTQsImlhdCI6MTc2NzU0MzkyNywiZXhwIjoxNzY3NTc5OTI3fQ.RqZ8hAvfsuQG5n7o4NFmoogSXqFxP0vFfSiLyi8tv3E
 ###

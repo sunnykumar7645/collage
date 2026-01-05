@@ -1,5 +1,6 @@
 package com.jwt.jwtsecuritydemo.controller;
 
+import com.jwt.jwtsecuritydemo.DTO.SignUpRequestDTO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,7 +31,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<SignUpResponseDTO> signUp(@RequestBody LoginRequestDTO signupRequestDTO) {
+    public ResponseEntity<SignUpResponseDTO> signUp(@RequestBody SignUpRequestDTO signupRequestDTO) {
         SignUpResponseDTO response = authService.signup(signupRequestDTO);
         return ResponseEntity.ok(response);
     }
